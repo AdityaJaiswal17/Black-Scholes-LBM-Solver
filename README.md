@@ -20,7 +20,7 @@ x, u, steps = lbm(640)
 S, V = to_price(x, u)
 ```
 
-`python scripts/convergence.py` prints the convergence table and saves it, with a plot, in `results/`.
+`python run.py` prints the convergence table and saves it, with a plot, in `results/`.
 
 ## Method
 
@@ -208,7 +208,7 @@ Both schemes are second order: doubling $N$ cuts the error by about 4. Lattice B
 bslbm/transform.py         change of variables, payoff, boundary, closed form
 bslbm/lbm.py               D1Q3 lattice Boltzmann solver
 bslbm/crank_nicolson.py    Crank-Nicolson solver
-scripts/convergence.py     convergence table and plot
+run.py                     convergence table and plot
 tests/                     pytest tests
 ```
 
