@@ -1,7 +1,7 @@
 import numpy as np
 
 from bslbm.transform import (bs_call, payoff, far_field, to_price, K, r, T,
-                           XMAX)
+                             XMAX)
 
 
 class TestTransform:
