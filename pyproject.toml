@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bslbm"
+version = "0.1.0"
+description = "Black-Scholes call pricing with a D1Q3 lattice Boltzmann scheme"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy", "scipy", "pandas", "matplotlib"]
+
+[project.optional-dependencies]
+dev = ["pytest", "flake8", "pytest-cov"]
+
+[tool.setuptools]
+packages = ["bslbm"]
